@@ -2,29 +2,29 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="absolute w-screen flex justify-center">
-      <div className="fixed flex z-10  justify-center items-center bg-gradient-to-r from-gray-700 to-slate-700 h-[15%]  w-auto rounded-full p-[11px] mt-[11px] font-sans text-lg shadow-md">
+      <div className="fixed text-sm top-2 h-[90px] sm:h-[110px] flex z-10  justify-center items-center bg-gradient-to-r from-gray-700 to-slate-700 rounded-full p-[11px] mt-[11px] font-sans sm:text-md shadow-md">
         <Link
           to={"/"}
-          className="Home p-4  md:p-6 lg:p-8 text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
+          className="Home p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
         >
           Home
         </Link>
 
         <Link
           to={"/Projects"}
-          className="Project p-4  md:p-6 lg:p-8 text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
+          className="Project p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
         >
           Projects
         </Link>
         <Link
           to={"/Education"}
-          className="Contact p-4  md:p-6 lg:p-8 text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
+          className="Contact p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
         >
           Education
         </Link>
         <Link
           to={"/Contact"}
-          className="Contact p-4  md:p-6 lg:p-8 text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
+          className="Contact p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
         >
           Contacts
         </Link>

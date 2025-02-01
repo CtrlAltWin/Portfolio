@@ -28,11 +28,11 @@ const Home = () => {
 
   return (
     <div
-      className="Home relative flex-col h-screen w-screen"
+      className="Home relative flex justify-center h-screen w-screen"
       style={{ backgroundColor: themeColor }}
     >
       {/* Profile Section */}
-      <div className="mt-32 profile-container text-center absolute top-10 w-full flex flex-col items-center">
+      <div className="mt-32 container text-center absolute top-10 w-full flex flex-col items-center">
         {/* Profile Picture */}
         <div className="profile-img w-32 h-32 rounded-full border-4 border-white mb-4">
           <img
@@ -43,29 +43,27 @@ const Home = () => {
         </div>
 
         {/* Profile Info */}
-        <div className="text-white text-2xl font-semibold ">
+        <div className="text-white text-2xl font-semibold mb-4">
           <p>Raunak</p>
           <p className="text-xl text-gray-400">Full Stack Developer</p>
         </div>
-      </div>
 
-      {/* Message Animation */}
-      <div className="px-10 absolute text-gray-300 flex h-5/6 w-full items-center justify-center mt-28">
-        <div className="hidden md:block  text-4xl font-semibold font-poppins text-center tracking-wider">
-          {Message + (Message.length < s.length ? "|" : "")}
+        {/* Message Animation */}
+        <div className="px-10  text-gray-300 flex text-4xl w-full font-semibold items-center justify-center mb-4">
+          <div className="hidden md:block text-center tracking-wider">
+            {Message + (Message.length < s.length ? "|" : "")}
+          </div>
+          <div className="md:hidden  font-poppins text-center tracking-wider">
+            {"hello! user,"}
+          </div>
         </div>
-        <div className="md:hidden text-4xl font-semibold font-poppins text-center tracking-wider">
-          {"hello! user,"}
-        </div>
-      </div>
 
-      {/* Buttons Section */}
-      <div className="absolute flex flex-col gap-4 h-full w-full justify-center items-center mt-40">
-        {true ? (
-          <div className="few-Btns mt-10">
-            <div className="flex gap-4 justify-center">
+        {/* Buttons Section */}
+        <div className="h-full w-full justify-center items-center mb-4">
+          <div className="few-Btns mt-10 px-4">
+            <div className="flex gap-4 justify-center sm:text-lg mb-5" >
               <button
-                className="bg-blue-400 text-white text-xl py-3 px-8 rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-blue-500 w-48"
+                className="bg-blue-400 text-white  rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-blue-500 w-36 sm:w-44 p-2 h-10 sm:h-12 overflow-hidden"
                 onClick={() => {
                   navigate("/Contact");
                 }}
@@ -73,7 +71,7 @@ const Home = () => {
                 Let's Connect!
               </button>
               <button
-                className="bg-indigo-300 text-white text-xl py-3 px-8 rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-indigo-400 w-48"
+                className="bg-indigo-300 text-white  rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-indigo-400 w-36 sm:w-44 p-2 h-10 sm:h-12 overflow-hidden"
                 onClick={() => {
                   navigate("/Projects");
                 }}
@@ -81,9 +79,9 @@ const Home = () => {
                 See Projects
               </button>
             </div>
-            <div className="flex gap-4 justify-center mt-5">
+            <div className="flex gap-4 justify-center sm:text-lg">
               <button
-                className="bg-blue-400 text-white text-xl py-3 px-8 rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-blue-500 w-48"
+                className="bg-blue-400 text-white  rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-blue-500 w-36 sm:w-44 p-2 h-10 sm:h-12 overflow-hidden"
                 onClick={() => {
                   window.open("https://leetcode.com/raunak_1611/", "_blank");
                 }}
@@ -91,7 +89,7 @@ const Home = () => {
                 My Leetcode
               </button>
               <button
-                className="bg-indigo-300 text-white text-xl py-3 px-8 rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-indigo-400 w-48"
+                className="bg-indigo-300 text-white  rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-indigo-400 w-36 sm:w-44 p-2 h-10 sm:h-12 overflow-hidden"
                 onClick={() => {
                   window.open("https://github.com/CtrlAltWin", "_blank");
                 }}
@@ -100,9 +98,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-        ) : (
-          <div></div>
-        )}
+        </div>
       </div>
     </div>
   );
