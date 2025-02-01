@@ -36,7 +36,7 @@ const Projects = () => {
         backgroundColor: themeColor,
       }}
     >
-      <div className=" flex sm:flex-col w-screen gap-2 sm:gap-6 mt-24 p-2 rounded-lg justify-center items-center">
+      <div className="fixed top-20 flex sm:flex-col w-screen gap-2 sm:gap-6  p-2 rounded-lg justify-center items-center mt-24">
         {projectDetails.map((project, index) => (
           <div
             key={index}
