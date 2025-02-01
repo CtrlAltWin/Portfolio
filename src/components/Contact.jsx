@@ -29,7 +29,7 @@ const Contact = () => {
         {contacts.map((contact, index) => (
           <div
             key={index}
-            className="pt-12 sm:p-4 border rounded-lg shadow-lg w-[25%] min-w-[105px] h-56 sm:h-auto sm:w-[60%] sm:min-w-[500px] flex flex-col items-center text-center hover:scale-105 transition-transform"
+            className="pt-14 p-2 sm:p-4 border rounded-lg shadow-lg w-[30%] min-w-[105px] h-56 sm:h-auto sm:w-[60%] sm:min-w-[500px] flex flex-col items-center text-center hover:scale-105 transition-transform"
             style={{
               backgroundColor: cardColor,
             }}
@@ -40,7 +40,7 @@ const Contact = () => {
               className="w-12 h-12 sm:w-16 sm:h-16 mb-2 sm:mb-4"
             />
             <a
-              className="mt-1 w-[40%] min-w-[100px] sm:min-w-[200px] h-8 sm:h-10 text-[9px] sm:text-md text-white font-semibold bg-gray-700 rounded-md flex items-center justify-center hover:scale-95"
+              className="mt-1 p-2 w-[40%] min-w-[100px] sm:min-w-[200px] h-8 sm:h-10 text-[9px] sm:text-md text-white font-semibold bg-gray-700 rounded-md flex items-center justify-center hover:scale-95"
               href={contact.link}
             >
               Visit {contact.name}
