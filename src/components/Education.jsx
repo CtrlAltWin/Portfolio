@@ -38,7 +38,7 @@ const Education = () => {
         backgroundColor: themeColor,
       }}
     >
-      <div className="fixed top-32 sm:top-12 flex sm:flex-col w-screen gap-3 p-1 sm:p-4 sm:gap-6 rounded-lg justify-center items-center mt-24">
+      <div className="fixed top-32 sm:top-12 flex sm:flex-col w-screen gap-3 p-1 sm:p-4 sm:gap-6 rounded-lg justify-center items-center mt-28">
         {educationDetails.map((item, index) => (
           <div
             key={index}
