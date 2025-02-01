@@ -37,10 +37,10 @@ const Contact = () => {
             <img
               src={contact.logo}
               alt={contact.name}
-              className="w-12 h-12 sm:w-16 sm:h-16 mb-2 sm:mb-4"
+              className="w-12 h-12 sm:mt-4 sm:w-16 sm:h-16 mb-2 sm:mb-4"
             />
             <a
-              className="btn btn-ghost mt-1 p-2 w-[40%] min-w-[100px] sm:min-w-[200px] h-6 sm:h-10 text-[9px] sm:text-md text-white font-semibold rounded-md flex items-center justify-center hover:scale-95"
+              className="btn btn-ghost p-2 w-[40%] min-w-[100px] sm:min-w-[200px] h-6 sm:h-10 text-[9px] sm:text-md text-white font-semibold rounded-md flex items-center justify-center hover:scale-95"
               href={contact.link}
             >
               Visit {contact.name}

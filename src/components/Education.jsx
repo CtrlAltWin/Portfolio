@@ -26,7 +26,7 @@ const Education = () => {
       level: "High School",
       degree: "CBSE Board",
       institution: "MS Memorial Public School",
-      year: "2009 - 2019",
+      year: "20018 - 2019",
       result: "Percentage: 83%",
     },
   ];
