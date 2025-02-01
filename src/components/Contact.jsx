@@ -22,14 +22,14 @@ const Contact = () => {
 
   return (
     <div
-      className="flex relative h-screen items-center justify-center"
+      className="flex relative h-screen w-screen items-center"
       style={{ backgroundColor: themeColor }}
     >
-      <div className="flex flex-col gap-6 w-[60%] min-w-[500px] mt-16 h-auto p-6 rounded-lg">
+      <div className="fixed top-36 sm:top-24 flex sm:flex-col w-screen gap-3 p-1 sm:p-4 sm:gap-6 rounded-lg justify-center items-center mt-24">
         {contacts.map((contact, index) => (
           <div
             key={index}
-            className="border rounded-lg shadow-lg flex flex-col items-center text-center p-6  transition-transform"
+            className="pt-12 sm:p-4 border rounded-lg shadow-lg w-[25%] min-w-[105px] h-56 sm:h-auto sm:w-[60%] sm:min-w-[500px] flex flex-col items-center text-center hover:scale-105 transition-transform"
             style={{
               backgroundColor: cardColor,
             }}
@@ -37,11 +37,10 @@ const Contact = () => {
             <img
               src={contact.logo}
               alt={contact.name}
-              className="w-16 h-16 mb-4"
+              className="w-12 h-12 sm:w-16 sm:h-16 mb-2 sm:mb-4"
             />
-
             <a
-              className="btn btn-ghost w-[30%] min-w-[200px] h-8 text-white rounded-md font-semibold  hover:scale-95 "
+              className="mt-1 w-[40%] min-w-[100px] sm:min-w-[200px] h-8 sm:h-10 text-[9px] sm:text-md text-white font-semibold bg-gray-700 rounded-md flex items-center justify-center hover:scale-95"
               href={contact.link}
             >
               Visit {contact.name}
@@ -54,3 +53,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
