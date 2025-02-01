@@ -40,7 +40,7 @@ const Contact = () => {
               className="w-12 h-12 sm:w-16 sm:h-16 mb-2 sm:mb-4"
             />
             <a
-              className="mt-1 p-2 w-[40%] min-w-[100px] sm:min-w-[200px] h-8 sm:h-10 text-[9px] sm:text-md text-white font-semibold bg-gray-700 rounded-md flex items-center justify-center hover:scale-95"
+              className="btn btn-ghost mt-1 p-2 w-[40%] min-w-[100px] sm:min-w-[200px] h-6 sm:h-10 text-[9px] sm:text-md text-white font-semibold rounded-md flex items-center justify-center hover:scale-95"
               href={contact.link}
             >
               Visit {contact.name}
