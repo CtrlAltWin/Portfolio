@@ -5,7 +5,7 @@ const Header = () => {
   const [Drag, setDrag] = useState(false);
   return (
     <motion.div
-      className="absolute w-screen flex justify-center z-10"
+      className="absolute w-screen flex justify-center z-10 scale-[80%] sm:scale-100"
       drag
       animate={{
         scale: Drag ? 0.9 : 1,
