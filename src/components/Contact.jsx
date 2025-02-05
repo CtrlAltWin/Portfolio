@@ -28,13 +28,13 @@ const Contact = () => {
       <div className="fixed top-36 sm:top-24 flex sm:flex-col w-screen gap-3 p-1 sm:p-4 sm:gap-6 rounded-lg justify-center items-center mt-24">
         {contacts.map((contact, index) => (
           <motion.div
-            initial={{ opacity: 0.1, scale: 0.9 }}
+            initial={{ opacity: 0.7, scale: 0.9 }}
             whileInView={{
               scale: 1,
               opacity: 1,
             }}
             transition={{
-              duration: 0.4,
+              duration: 0.3,
               ease: "easeInOut",
             }}
             key={index}

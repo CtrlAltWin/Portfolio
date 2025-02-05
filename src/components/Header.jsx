@@ -24,29 +24,29 @@ const Header = () => {
         setDrag(false);
       }}
     >
-      <div className="fixed text-sm top-2 h-[90px] sm:h-[110px] flex z-10  justify-center items-center bg-gradient-to-r from-gray-700 to-slate-700 rounded-full p-[11px] mt-[11px] font-extralight sm:text-md shadow-md">
+      <div className="fixed text-sm top-2 h-[90px] sm:h-[110px] flex z-10  justify-center items-center bg-gradient-to-r from-gray-700 to-slate-700 rounded-full p-[11px] mt-[11px] font-mono sm:text-md shadow-md">
         <Link
           to={"/"}
-          className="Home p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
+          className="Home p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
         >
           Home
         </Link>
 
         <Link
           to={"/Projects"}
-          className="Project p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
+          className="Project p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
         >
           Projects
         </Link>
         <Link
           to={"/Education"}
-          className="Contact p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
+          className="Contact p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
         >
           Education
         </Link>
         <Link
           to={"/Contact"}
-          className="Contact p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-full"
+          className="Contact p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
         >
           Contacts
         </Link>

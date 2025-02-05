@@ -4,7 +4,7 @@ import ThemeContext from "../../utils/ThemeContext";
 const ThemeBtn = () => {
   const { Theme, setTheme } = useContext(ThemeContext);
   return (
-    <div className=" absolute flex  w-[97%] h-auto z-10 justify-end rounded-full mt-10 bg-transparent right-2">
+    <div className=" absolute flex  w-[97%] h-auto z-10 justify-end rounded-full mt-[39px] bg-transparent right-2">
       <label className="swap swap-rotate h-auto rounded-full bg-transparent fixed mt-[3px] ">
         {/* this hidden checkbox controls the state */}
         <input
