@@ -5,7 +5,7 @@ const Header = () => {
   const [Drag, setDrag] = useState(false);
   return (
     <motion.div
-      className="absolute w-screen flex justify-center z-10 scale-[80%] sm:scale-100"
+      className="absolute w-screen flex justify-center z-10 "
       drag
       animate={{
         scale: Drag ? 0.9 : 1,
@@ -24,7 +24,7 @@ const Header = () => {
         setDrag(false);
       }}
     >
-      <div className="fixed text-sm top-2 h-[90px] sm:h-[110px] flex z-10  justify-center items-center bg-gradient-to-r from-gray-700 to-slate-700 rounded-full p-[11px] mt-[11px] font-mono sm:text-md shadow-md">
+      <div className="fixed text-sm top-2 h-[90px] sm:h-[110px] flex z-10  justify-center items-center bg-gradient-to-r from-gray-700 to-slate-700 rounded-full p-[11px] mt-[11px] font-mono sm:text-md shadow-md scale-[80%] sm:scale-100">
         <Link
           to={"/"}
           className="Home p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"

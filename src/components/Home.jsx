@@ -61,7 +61,7 @@ const Home = () => {
         {/* Buttons Section */}
         <div className="h-full w-full justify-center items-center mb-4">
           <div className="few-Btns mt-10 px-4">
-            <div className="flex gap-4 justify-center sm:text-lg mb-5" >
+            <div className="flex gap-4 justify-center sm:text-lg mb-5">
               <button
                 className="bg-blue-400 text-white  rounded-full shadow-lg transform transition-all hover:scale-105 hover:bg-blue-500 w-36 sm:w-44 p-2 h-10 sm:h-12 overflow-hidden"
                 onClick={() => {

@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const Logo = () => {
   return (
-    <Link to={"/"} className="absolute w-screen h-screen mt-[37px] cursor-pointer left-2">
+    <Link
+      to={"/"}
+      className="absolute w-screen h-screen mt-[37px] cursor-pointer left-2"
+    >
       <div className="hidden sm:block fixed  text-white text-3xl font-extralight cursor-pointer z-10 ">
         Portfolio
       </div>
