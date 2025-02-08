@@ -20,7 +20,7 @@ const Education = () => {
       level: "Intermediate",
       degree: "Science Stream",
       institution: "Trident Public School",
-      year: "2020 - 2022",
+      year: "2019 - 2021",
       result: "Percentage: 84%",
     },
     {
@@ -47,7 +47,7 @@ const Education = () => {
               opacity: 1,
             }}
             transition={{
-              delay: 0.15 + index / 10,
+              delay: 0.1 + index / 10,
             }}
             key={index}
             className="p-4 sm:p-2 border rounded-lg shadow-lg w-[25%] min-w-[105px] h-60 sm:h-auto sm:w-[60%] sm:min-w-[500px] flex flex-col items-center text-center hover:scale-105 transition-transform"

@@ -23,22 +23,22 @@ const Contact = () => {
   return (
     <div
       className="flex relative h-screen w-screen items-center"
-      style={{ backgroundColor: themeColor }}
+      
     >
       <div className="fixed top-36 sm:top-24 flex sm:flex-col w-screen gap-3 p-1 sm:p-4 sm:gap-6 rounded-lg justify-center items-center mt-24">
         {contacts.map((contact, index) => (
           <motion.div
-            initial={{ opacity: 0.7, scale: 0.9 }}
+            initial={{ opacity: 0.6, scale:0.6}}
             whileInView={{
               scale: 1,
               opacity: 1,
             }}
             transition={{
-              duration: 0.3,
+              duration: 0.2,
               ease: "easeInOut",
             }}
             key={index}
-            className="pt-14 p-2 sm:p-4 border rounded-lg shadow-lg w-[30%] min-w-[105px] h-56 sm:h-auto sm:w-[60%] sm:min-w-[500px] flex flex-col items-center text-center hover:scale-105 transition-transform"
+            className="pt-14 p-2 sm:p-4 border rounded-lg shadow-lg w-[30%] min-w-[105px] h-56 sm:h-auto sm:w-[50%] sm:min-w-[500px] flex flex-col items-center text-center hover:scale-105 transition-transform"
             style={{
               backgroundColor: cardColor,
             }}

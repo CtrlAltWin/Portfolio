@@ -1,8 +1,12 @@
 import React, { useContext } from "react";
 import ThemeContext from "../../utils/ThemeContext";
+import { dark, light } from "../../utils/themeColors";
 
 const ThemeBtn = () => {
   const { Theme, setTheme } = useContext(ThemeContext);
+  const themeColor = Theme === "dark" ? dark : light;
+  const body = document.getElementsByTagName("body")[0];
+  body.style.backgroundColor = themeColor;
   return (
     <div className=" absolute flex  w-[97%] h-auto z-10 justify-end rounded-full mt-[39px] bg-transparent right-2">
       <label className="swap swap-rotate h-auto rounded-full bg-transparent fixed mt-[3px] ">

@@ -8,7 +8,7 @@ const Header = () => {
       className="absolute w-screen flex justify-center z-10 "
       drag
       animate={{
-        scale: Drag ? 0.9 : 1,
+        scale: Drag ? 0.8 : 1,
         opacity: Drag ? 0.8 : 1,
       }}
       dragConstraints={{
@@ -24,29 +24,29 @@ const Header = () => {
         setDrag(false);
       }}
     >
-      <div className="fixed text-sm top-2 h-[90px] sm:h-[110px] flex z-10  justify-center items-center bg-gradient-to-r from-gray-700 to-slate-700 rounded-full p-[11px] mt-[11px] font-mono sm:text-md shadow-md scale-[80%] sm:scale-100">
+      <div className="fixed text-sm top-1 sm:top-3 h-[100px] flex z-10  justify-center items-center bg-gradient-to-r from-slate-700 to-slate-700 rounded-full p-[11px] mt-[11px] font-mono sm:text-md shadow-md scale-[80%] sm:scale-100">
         <Link
           to={"/"}
-          className="Home p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
+          className="Home p-2  sm:p-2  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
         >
           Home
         </Link>
 
         <Link
           to={"/Projects"}
-          className="Project p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
+          className="Project p-2  sm:p-2  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
         >
           Projects
         </Link>
         <Link
           to={"/Education"}
-          className="Contact p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
+          className="Contact p-2  sm:p-2  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
         >
           Education
         </Link>
         <Link
           to={"/Contact"}
-          className="Contact p-2  sm:p-4  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
+          className="Contact p-2  sm:p-2  text-white  hover:text-green-100 hover:bg-gray-600 hover:rounded-xl"
         >
           Contacts
         </Link>
